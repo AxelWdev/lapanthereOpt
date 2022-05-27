@@ -326,10 +326,12 @@ a:hover {
     float: left;
     margin-top: 4px;
     font-size: 16px;
+    
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
+    
 }
 
 .nav > li a:hover,
@@ -407,6 +409,7 @@ a:hover {
     background: none!important;
     display: block;
     padding: 14px 15px;
+
 }
 
 nav .caret {
@@ -650,8 +653,8 @@ label,
 .btn,
 a {
     font-family: "helvetica";
-    font-weight: 400;
-    color: #575757!important;
+    font-weight: 700;
+    color: #575757;
 }
 
 .container {
@@ -678,6 +681,7 @@ a {
 
 p {
     font-size: 16px;
+    font-weight: normal;
 }
 
 .tight-width-whitespace {
@@ -848,7 +852,7 @@ form {
   }
   
   
-  input:valid {
+  input:required:valid {
     background-color: #ddffdd;
   }
 
@@ -861,6 +865,12 @@ form {
     width: 100%;
     height: 400px;
 }
+
+#bloc-7 a {
+    text-decoration: underline;
+}
+
+
 
 
 
