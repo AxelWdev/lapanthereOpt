@@ -838,28 +838,13 @@ footer p {
     color: #000000!important;
 }
 
-#bloc-6 h1,#bloc-6 p {
-    color:#000000!important;
-}
 
 form {
     font-size: 16px;
 }
 
 
-  input:invalid {
-    background-color: #ffdddd;
-  }
-  
-  
-  input:required:valid {
-    background-color: #ddffdd;
-  }
-
-
-  input:required:invalid {
-    border-color: #c00000;
-  }
+ 
 
 #map {
     width: 100%;
@@ -869,6 +854,8 @@ form {
 #bloc-7 a {
     text-decoration: underline;
 }
+
+
 
 
 
@@ -900,13 +887,13 @@ form {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -924,10 +911,10 @@ form {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+    /* .bloc {
+         padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right); 
+    }  */
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -936,8 +923,8 @@ form {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        /* padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right); */
     }
 }
 
@@ -1078,6 +1065,10 @@ form {
         width: 180px;
         height: 320px;
     }
+    #bloc-7 .bloc-lg {
+        padding-bottom: 0;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -1091,4 +1082,6 @@ form {
     .bloc-mob-center-text {
         text-align: center;
     }
+
+
 }
