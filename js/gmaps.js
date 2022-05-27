@@ -2412,6 +2412,18 @@ if (!Array.prototype.indexOf) {
       return -1;
   }
 }
+var map = new GMaps({
+  div: '#map',
+  lat: 45.769440,
+  lng: 4.830100
+});
+
+map.addMarker({
+  lat: 45.769440,
+  lng: 4.830100,
+  title: 'Lima',
+  
+});
 
 return GMaps;
 }));
