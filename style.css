@@ -846,16 +846,15 @@ form {
 
  
 
-#map {
-    width: 100%;
-    height: 400px;
-}
-
 #bloc-7 a {
     text-decoration: underline;
 }
 
-
+.social-link {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+} 
 
 
 
